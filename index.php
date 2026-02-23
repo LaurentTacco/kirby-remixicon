@@ -10,10 +10,7 @@ if (filesize($indexJs) < 1000) {
     LaurentTacco\KirbyRemixicon\IconUpdater::update(__DIR__);
 }
 
-// Read plugin version from composer.json
-$composer = json_decode(file_get_contents(__DIR__ . '/composer.json'), true);
-
-// Read Remix Icon version
+// Read Remix Icon version for update checks
 $remixVersion = null;
 $versionFile  = __DIR__ . '/.remixicon-version';
 
@@ -22,10 +19,7 @@ if (is_file($versionFile)) {
 }
 
 Kirby::plugin('laurenttacco/kirby-remixicon', [
-    'info' => [
-        'version'  => $composer['version'] ?? '1.0.0',
-        'license'  => 'MIT',
-        'homepage' => 'https://github.com/LaurentTacco/kirby-remixicon',
+    'options' => [
         'remixicon' => $remixVersion,
     ],
 ]);
