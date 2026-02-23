@@ -1,0 +1,23 @@
+{
+    "name": "laurenttacco/kirby-remixicon",
+    "description": "3000+ Remix Icons for the Kirby Panel",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "homepage": "https://github.com/laurenttacco/kirby-remixicon",
+    "authors": [
+        {
+            "name": "Laurent Tacco",
+            "homepage": "https://studiofables.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/laurenttacco/kirby-remixicon",
+        "docs": "https://github.com/laurenttacco/kirby-remixicon/blob/main/README.md"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-zip": "*",
+        "getkirby/composer-installer": "^1.1"
+    }
+}
